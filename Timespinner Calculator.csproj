@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5B073D1C-B77B-43A8-818A-29BC318F6FBB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Timespinner_Calculator</RootNamespace>
+    <AssemblyName>Timespinner Calculator</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game Data\Code Stuffs\PictureBoxWithInterpolationMode.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Game Data\GameData.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Game Data\Images\MenuIcons_132.png" />
+    <Content Include="Game Data\Images\MenuIcons_133.png" />
+    <Content Include="Game Data\Images\MenuIcons_134.png" />
+    <Content Include="Game Data\Images\MenuIcons_135.png" />
+    <Content Include="Game Data\Images\MenuIcons_136.png" />
+    <Content Include="Game Data\Images\MenuIcons_137.png" />
+    <Content Include="Game Data\Images\MenuIcons_138.png" />
+    <Content Include="Game Data\Images\MenuIcons_139.png" />
+    <Content Include="Game Data\Images\MenuIcons_140.png" />
+    <Content Include="Game Data\Images\MenuIcons_141.png" />
+    <Content Include="Game Data\Images\MenuIcons_142.png" />
+    <Content Include="Game Data\Images\MenuIcons_143.png" />
+    <Content Include="Game Data\Images\MenuIcons_144.png" />
+    <Content Include="Game Data\Images\MenuIcons_145.png" />
+    <Content Include="Game Data\Images\MenuIcons_146.png" />
+    <Content Include="Game Data\Images\MenuIcons_147.png" />
+    <Content Include="Game Data\Images\MenuIcons_148.png" />
+    <Content Include="Game Data\Images\MenuIcons_149.png" />
+    <Content Include="Game Data\Images\MenuIcons_150.png" />
+    <Content Include="Game Data\Images\MenuIcons_151.png" />
+    <Content Include="Game Data\Images\MenuIcons_152.png" />
+    <Content Include="Game Data\Images\MenuIcons_153.png" />
+    <Content Include="Game Data\Images\MenuIcons_154.png" />
+    <Content Include="Game Data\Images\MenuIcons_155.png" />
+    <Content Include="Game Data\Images\MenuIcons_156.png" />
+    <Content Include="Game Data\Images\MenuIcons_157.png" />
+    <Content Include="Game Data\Images\MenuIcons_158.png" />
+    <Content Include="Game Data\Images\MenuIcons_159.png" />
+    <Content Include="Game Data\Images\MenuIcons_160.png" />
+    <Content Include="Game Data\Images\MenuIcons_161.png" />
+    <Content Include="Game Data\Images\MenuIcons_162.png" />
+    <Content Include="Game Data\Images\MenuIcons_163.png" />
+    <Content Include="Game Data\Images\MenuIcons_164.png" />
+    <Content Include="Game Data\Images\MenuIcons_165.png" />
+    <Content Include="Game Data\Images\MenuIcons_166.png" />
+    <Content Include="Game Data\Images\MenuIcons_167.png" />
+    <Content Include="Game Data\Images\MenuIcons_168.png" />
+    <Content Include="Game Data\Images\MenuIcons_169.png" />
+    <Content Include="Game Data\Images\MenuIcons_170.png" />
+    <Content Include="Game Data\Images\MenuIcons_171.png" />
+    <Content Include="Game Data\Images\MenuIcons_172.png" />
+    <Content Include="Game Data\Images\MenuIcons_173.png" />
+    <Content Include="Game Data\Images\MenuIcons_174.png" />
+    <Content Include="Game Data\Images\MenuIcons_175.png" />
+    <Content Include="Game Data\Images\MenuIcons_176.png" />
+    <Content Include="Game Data\Images\MenuIcons_177.png" />
+    <Content Include="Game Data\Images\MenuIcons_178.png" />
+    <Content Include="Game Data\Images\MenuIcons_179.png" />
+    <Content Include="Game Data\Images\MenuIcons_180.png" />
+    <Content Include="Game Data\Images\MenuIcons_181.png" />
+    <Content Include="Game Data\Images\MenuIcons_182.png" />
+    <Content Include="Game Data\Images\MenuIcons_183.png" />
+    <Content Include="Game Data\Images\MenuIcons_184.png" />
+    <Content Include="Game Data\Images\MenuIcons_185.png" />
+    <Content Include="Game Data\Images\MenuIcons_186.png" />
+    <Content Include="Game Data\Images\MenuIcons_187.png" />
+    <Content Include="Game Data\Images\MenuIcons_188.png" />
+    <Content Include="Game Data\Images\MenuIcons_189.png" />
+    <Content Include="Game Data\Images\MenuIcons_190.png" />
+    <Content Include="Game Data\Images\MenuIcons_191.png" />
+    <Content Include="Game Data\Images\MenuIcons_192.png" />
+    <Content Include="Game Data\Images\MenuIcons_193.png" />
+    <Content Include="Game Data\Images\MenuIcons_194.png" />
+    <Content Include="Game Data\Images\MenuIcons_195.png" />
+    <Content Include="Game Data\Images\MenuIcons_196.png" />
+    <Content Include="Game Data\Images\MenuIcons_197.png" />
+    <Content Include="Game Data\Images\MenuIcons_198.png" />
+    <Content Include="Game Data\Images\MenuIcons_199.png" />
+    <Content Include="Game Data\Images\MenuIcons_200.png" />
+    <Content Include="Game Data\Images\MenuIcons_201.png" />
+    <Content Include="Game Data\Images\MenuIcons_202.png" />
+    <Content Include="Game Data\Images\MenuIcons_203.png" />
+    <Content Include="Game Data\Images\MenuIcons_204.png" />
+    <Content Include="Game Data\Images\MenuIcons_205.png" />
+    <Content Include="Game Data\Images\MenuIcons_206.png" />
+    <Content Include="Game Data\Images\MenuIcons_207.png" />
+    <Content Include="Game Data\Images\MenuIcons_208.png" />
+    <Content Include="Game Data\Images\MenuIcons_209.png" />
+    <Content Include="Game Data\Images\MenuIcons_210.png" />
+    <Content Include="Game Data\Images\MenuIcons_211.png" />
+    <Content Include="Game Data\Images\MenuIcons_212.png" />
+    <Content Include="Game Data\Images\MenuIcons_213.png" />
+    <Content Include="Game Data\Images\MenuIcons_214.png" />
+    <Content Include="Game Data\Images\MenuIcons_215.png" />
+    <Content Include="Game Data\Images\MenuIcons_216.png" />
+    <Content Include="Game Data\Images\MenuIcons_217.png" />
+    <Content Include="Game Data\Images\MenuIcons_218.png" />
+    <Content Include="Game Data\Images\MenuIcons_219.png" />
+    <Content Include="Game Data\Images\MenuIcons_220.png" />
+    <Content Include="Game Data\Images\MenuIcons_221.png" />
+    <Content Include="Game Data\Images\MenuIcons_222.png" />
+    <Content Include="Game Data\Images\MenuIcons_223.png" />
+    <Content Include="Game Data\Images\MenuIcons_224.png" />
+    <Content Include="Game Data\Images\MenuIcons_225.png" />
+    <Content Include="Game Data\Images\MenuIcons_226.png" />
+    <Content Include="Game Data\Images\MenuIcons_227.png" />
+    <Content Include="Game Data\Images\MenuIcons_228.png" />
+    <Content Include="Game Data\Images\MenuIcons_229.png" />
+    <Content Include="Game Data\Images\MenuIcons_230.png" />
+    <Content Include="Game Data\Images\MenuIcons_231.png" />
+    <Content Include="Game Data\Images\MenuIcons_232.png" />
+    <Content Include="Game Data\Images\MenuIcons_233.png" />
+    <Content Include="Game Data\Images\MenuIcons_234.png" />
+    <Content Include="Game Data\Images\MenuIcons_235.png" />
+    <Content Include="Game Data\Images\MenuIcons_236.png" />
+    <Content Include="Game Data\Images\MenuIcons_237.png" />
+    <Content Include="Game Data\Images\MenuIcons_238.png" />
+    <Content Include="Game Data\Images\MenuIcons_239.png" />
+    <Content Include="Game Data\Images\MenuIcons_240.png" />
+    <Content Include="Game Data\Images\MenuIcons_241.png" />
+    <Content Include="Game Data\Images\MenuIcons_242.png" />
+    <Content Include="Game Data\Images\MenuIcons_243.png" />
+    <Content Include="Game Data\Images\MenuIcons_244.png" />
+    <Content Include="Game Data\Images\MenuIcons_245.png" />
+    <Content Include="Game Data\Images\MenuIcons_246.png" />
+    <Content Include="Game Data\Images\MenuIcons_247.png" />
+    <Content Include="Game Data\Images\MenuIcons_248.png" />
+    <Content Include="Game Data\Images\MenuIcons_249.png" />
+    <Content Include="Game Data\Images\MenuIcons_25.png" />
+    <Content Include="Game Data\Images\MenuIcons_250.png" />
+    <Content Include="Game Data\Images\MenuIcons_251.png" />
+    <Content Include="Game Data\Images\MenuIcons_252.png" />
+    <Content Include="Game Data\Images\MenuIcons_253.png" />
+    <Content Include="Game Data\Images\MenuIcons_254.png" />
+    <Content Include="Game Data\Images\MenuIcons_255.png" />
+    <Content Include="Game Data\Images\MenuIcons_256.png" />
+    <Content Include="Game Data\Images\MenuIcons_26.png" />
+    <Content Include="Game Data\Images\MenuIcons_27.png" />
+    <Content Include="Game Data\Images\MenuIcons_28.png" />
+    <Content Include="Game Data\Images\MenuIcons_29.png" />
+    <Content Include="Game Data\Images\MenuIcons_30.png" />
+    <Content Include="Game Data\Images\MenuIcons_31.png" />
+    <Content Include="Game Data\Images\MenuIcons_32.png" />
+    <Content Include="Game Data\Images\MenuIcons_33.png" />
+    <Content Include="Game Data\Images\MenuIcons_34.png" />
+    <Content Include="Game Data\Images\MenuIcons_35.png" />
+    <Content Include="Game Data\Images\MenuIcons_36.png" />
+    <Content Include="Game Data\Images\MenuIcons_37.png" />
+    <Content Include="Game Data\Images\MenuIcons_38.png" />
+    <Content Include="Game Data\Images\MenuIcons_39.png" />
+    <Content Include="Game Data\Images\MenuIcons_40.png" />
+    <Content Include="Game Data\Images\MenuIcons_41.png" />
+    <Content Include="Game Data\Images\MenuIcons_42.png" />
+    <Content Include="Game Data\Images\MenuIcons_43.png" />
+    <Content Include="Game Data\Images\MenuIcons_44.png" />
+    <Content Include="Game Data\Images\MenuIcons_45.png" />
+    <Content Include="Game Data\Images\MenuIcons_46.png" />
+    <Content Include="Game Data\Images\MenuIcons_47.png" />
+    <Content Include="Game Data\Images\MenuIcons_48.png" />
+    <Content Include="Game Data\Images\MenuIcons_49.png" />
+    <Content Include="Game Data\Images\MenuIcons_50.png" />
+    <Content Include="Game Data\Images\MenuIcons_51.png" />
+    <Content Include="Game Data\Images\MenuIcons_52.png" />
+    <Content Include="Game Data\Images\MenuIcons_53.png" />
+    <Content Include="Game Data\Images\MenuIcons_54.png" />
+    <Content Include="Game Data\Images\MenuIcons_55.png" />
+    <Content Include="Game Data\Images\MenuIcons_56.png" />
+    <Content Include="Game Data\Images\MenuIcons_57.png" />
+    <Content Include="Game Data\Images\MenuIcons_58.png" />
+    <Content Include="Game Data\Images\MenuIcons_59.png" />
+    <Content Include="Game Data\Images\MenuIcons_60.png" />
+    <Content Include="Game Data\Images\MenuIcons_61.png" />
+    <Content Include="Game Data\Images\MenuIcons_62.png" />
+    <Content Include="Game Data\Images\MenuIcons_63.png" />
+    <Content Include="Game Data\Images\MenuIcons_64.png" />
+    <Content Include="Game Data\Images\MenuIcons_65.png" />
+    <Content Include="Game Data\Images\MenuIcons_66.png" />
+    <Content Include="Game Data\Images\MenuIcons_67.png" />
+    <Content Include="Game Data\Images\MenuIcons_68.png" />
+    <Content Include="Game Data\Images\MenuIcons_69.png" />
+    <Content Include="Game Data\Images\MenuIcons_70.png" />
+    <Content Include="Game Data\Images\MenuIcons_71.png" />
+    <Content Include="Game Data\Images\MenuIcons_72.png" />
+    <Content Include="Game Data\Images\MenuIcons_73.png" />
+    <Content Include="Game Data\Images\MenuIcons_74.png" />
+    <Content Include="Game Data\Images\MenuIcons_75.png" />
+    <Content Include="Game Data\Images\MenuIcons_76.png" />
+    <Content Include="Game Data\Images\MenuIcons_77.png" />
+    <Content Include="Game Data\Images\MenuIcons_78.png" />
+    <Content Include="Game Data\Images\MenuIcons_79.png" />
+    <Content Include="Game Data\Images\MenuIcons_80.png" />
+    <Content Include="Game Data\Images\Orbs\Blade Orb\Blade Orb.png" />
+    <Content Include="Game Data\Images\Orbs\Blade Orb\Colossal Blade.png" />
+    <Content Include="Game Data\Images\Orbs\Blade Orb\Scythe Ring.png" />
+    <Content Include="Game Data\Images\Orbs\Blood Orb\Blood Orb.png" />
+    <Content Include="Game Data\Images\Orbs\Blood Orb\Crimson Vortex.png" />
+    <Content Include="Game Data\Images\Orbs\Blood Orb\Sanguine Ring.png" />
+    <Content Include="Game Data\Images\Orbs\Blue Orb\Aura Blast.png" />
+    <Content Include="Game Data\Images\Orbs\Blue Orb\Bleak Ring.png" />
+    <Content Include="Game Data\Images\Orbs\Blue Orb\Blue Orb.png" />
+    <Content Include="Game Data\Images\Orbs\Empire Orb\Aura Serpent.png" />
+    <Content Include="Game Data\Images\Orbs\Empire Orb\Empire Orb.png" />
+    <Content Include="Game Data\Images\Orbs\Empire Orb\Star of Lachiem.png" />
+    <Content Include="Game Data\Images\Orbs\Eye Orb\Chaos Blades.png" />
+    <Content Include="Game Data\Images\Orbs\Eye Orb\Eye Orb.png" />
+    <Content Include="Game Data\Images\Orbs\Eye Orb\Oculus Ring.png" />
+    <Content Include="Game Data\Images\Orbs\Fire Orb\Fire Orb.png" />
+    <Content Include="Game Data\Images\Orbs\Fire Orb\Infernal Flames.png" />
+    <Content Include="Game Data\Images\Orbs\Fire Orb\Pyro Ring.png" />
+    <Content Include="Game Data\Images\Orbs\Forbidden Tome\Djinn Inferno.png" />
+    <Content Include="Game Data\Images\Orbs\Forbidden Tome\Forbidden Tome.png" />
+    <Content Include="Game Data\Images\Orbs\Forbidden Tome\Sun Ring.png" />
+    <Content Include="Game Data\Images\Orbs\Gun Orb\Arm Cannon.png" />
+    <Content Include="Game Data\Images\Orbs\Gun Orb\Economizer Ring.png" />
+    <Content Include="Game Data\Images\Orbs\Gun Orb\Gun Orb.png" />
+    <Content Include="Game Data\Images\Orbs\Ice Orb\Frozen Spires.png" />
+    <Content Include="Game Data\Images\Orbs\Ice Orb\Ice Orb.png" />
+    <Content Include="Game Data\Images\Orbs\Ice Orb\Icicle Ring.png" />
+    <Content Include="Game Data\Images\Orbs\Iron Orb\Colossal Hammer.png" />
+    <Content Include="Game Data\Images\Orbs\Iron Orb\Iron Orb.png" />
+    <Content Include="Game Data\Images\Orbs\Iron Orb\Shield Ring.png" />
+    <Content Include="Game Data\Images\Orbs\Monske Orb\Monske Orb.png" />
+    <Content Include="Game Data\Images\Orbs\Monske Orb\Monske Ring.png" />
+    <Content Include="Game Data\Images\Orbs\Monske Orb\Monske Spell.png" />
+    <Content Include="Game Data\Images\Orbs\Nether Orb\Corruption.png" />
+    <Content Include="Game Data\Images\Orbs\Nether Orb\Nether Orb.png" />
+    <Content Include="Game Data\Images\Orbs\Nether Orb\Shadow Seal.png" />
+    <Content Include="Game Data\Images\Orbs\Plasma Orb\Plasma Geyser.png" />
+    <Content Include="Game Data\Images\Orbs\Plasma Orb\Plasma Orb.png" />
+    <Content Include="Game Data\Images\Orbs\Plasma Orb\Royal Ring.png" />
+    <Content Include="Game Data\Images\Orbs\Radiant Orb\Hope Ring.png" />
+    <Content Include="Game Data\Images\Orbs\Radiant Orb\Lightwall.png" />
+    <Content Include="Game Data\Images\Orbs\Radiant Orb\Radiant Orb.png" />
+    <Content Include="Game Data\Images\Orbs\Shattered Orb\Bombardment.png" />
+    <Content Include="Game Data\Images\Orbs\Shattered Orb\Shattered Orb.png" />
+    <Content Include="Game Data\Images\Orbs\Shattered Orb\Silence Ring.png" />
+    <Content Include="Game Data\Images\Orbs\Umbra Orb\Dark Flames.png" />
+    <Content Include="Game Data\Images\Orbs\Umbra Orb\Dusk Ring.png" />
+    <Content Include="Game Data\Images\Orbs\Umbra Orb\Umbra Orb.png" />
+    <Content Include="Game Data\Images\Orbs\Wind Orb\Storm Eye.png" />
+    <Content Include="Game Data\Images\Orbs\Wind Orb\Tailwind Ring.png" />
+    <Content Include="Game Data\Images\Orbs\Wind Orb\Wind Orb.png" />
+    <Content Include="Game Data\Images\Relics\MenuIcons_1.png" />
+    <Content Include="Game Data\Images\Relics\MenuIcons_10.png" />
+    <Content Include="Game Data\Images\Relics\MenuIcons_11.png" />
+    <Content Include="Game Data\Images\Relics\MenuIcons_12.png" />
+    <Content Include="Game Data\Images\Relics\MenuIcons_13.png" />
+    <Content Include="Game Data\Images\Relics\MenuIcons_14.png" />
+    <Content Include="Game Data\Images\Relics\MenuIcons_15.png" />
+    <Content Include="Game Data\Images\Relics\MenuIcons_16.png" />
+    <Content Include="Game Data\Images\Relics\MenuIcons_17.png" />
+    <Content Include="Game Data\Images\Relics\MenuIcons_18.png" />
+    <Content Include="Game Data\Images\Relics\MenuIcons_19.png" />
+    <Content Include="Game Data\Images\Relics\MenuIcons_2.png" />
+    <Content Include="Game Data\Images\Relics\MenuIcons_20.png" />
+    <Content Include="Game Data\Images\Relics\MenuIcons_21.png" />
+    <Content Include="Game Data\Images\Relics\MenuIcons_22.png" />
+    <Content Include="Game Data\Images\Relics\MenuIcons_23.png" />
+    <Content Include="Game Data\Images\Relics\MenuIcons_24.png" />
+    <Content Include="Game Data\Images\Relics\MenuIcons_3.png" />
+    <Content Include="Game Data\Images\Relics\MenuIcons_4.png" />
+    <Content Include="Game Data\Images\Relics\MenuIcons_5.png" />
+    <Content Include="Game Data\Images\Relics\MenuIcons_6.png" />
+    <Content Include="Game Data\Images\Relics\MenuIcons_7.png" />
+    <Content Include="Game Data\Images\Relics\MenuIcons_8.png" />
+    <Content Include="Game Data\Images\Relics\MenuIcons_9.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
